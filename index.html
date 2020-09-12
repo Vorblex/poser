@@ -5,98 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <title>Poser</title>
-    <link rel="stylesheet" href="assets/css/foundation.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/foundation.min.css?rel=96859">
+    <link rel="stylesheet" href="assets/css/main.min.css?rel=96859">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   </head>
   <body>
-    <div class="splashScreen screen" id="splashScreen"></div>
-    <ul class="bg-squares">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <div class="logo-wrapper">
-      <div class="logo-inner">
-        <div class="logo-square"><img src="assets/img/splash/logo_background.png"></div>
-        <div class="logo"><img src="assets/img/splash/poser.png"></div>
-        <div class="logo-flares"><img src="assets/img/splash/flares_logo.png"></div>
+    <div class="splashScreen screen" id="splashScreen">
+      <ul class="bg-squares">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="logo-wrapper">
+        <div class="logo-inner">
+          <div class="logo-square"><img src="assets/img/splash/logo_background.png"></div>
+          <div class="logo"><img src="assets/img/splash/poser.png"></div>
+          <div class="logo-flares"><img src="assets/img/splash/flares_logo.png"></div>
+        </div>
       </div>
     </div>
     <div class="instructions screen" id="instructionScreen">
@@ -141,11 +143,67 @@
         </div>
       </div>
     </div>
+    <div class="game screen" id="gameScreen">
+      <div class="game-progress" id="gameProgress">
+        <div class="game-score-container">
+          <div class="game-score" id="gameScore">129</div>
+          <div class="game-total" id="gameTotal">/1000</div>
+        </div>
+        <div class="game-progress-bar">
+          <div class="game-progress-indicator" id="gameProgressBar" style="width: 25%"></div>
+        </div>
+      </div>
+      <div class="popup" id="gamePopup">
+        <div class="popup-content">
+          <div class="popup-box popup-box1"></div>
+          <div class="popup-box popup-box2"></div>
+          <div class="popup-box popup-box3"></div>
+          <div class="popup-text">
+            <h1 id="popupText">Sugo!</h1>
+          </div>
+        </div>
+      </div>
+      <div class="game-buttons" id="gameButtons">
+        <div class="game-buttons-inner">
+          <button class="game-button" id="checkBtn"><img src="assets/img/game/redo.png"></button>
+          <button class="game-button" id="redoBtn"><img src="assets/img/game/check.png"></button>
+        </div>
+      </div>
+      <div class="game-bar" id="gameBar">
+        <div class="game-bar-inner">
+          <div class="game-bar-item"><img src="assets/img/game/poseFrame1.png"></div>
+          <div class="game-bar-item"><img src="assets/img/game/poseFrame2.png"></div>
+          <div class="game-bar-item"><img src="assets/img/game/poseFrame1.png"></div>
+          <div class="game-bar-item"><img src="assets/img/game/poseFrame2.png"></div>
+          <div class="game-bar-item"><img src="assets/img/game/poseFrame1.png"></div>
+        </div>
+      </div>
+    </div>
+    <div class="score screen" id="scoreScreen">
+      <div class="score-wrapper">
+        <div class="score-inner">
+          <div class="score-box1"><img src="assets/img/score-screen/textBox_1.png"></div>
+          <div class="score-box2"><img src="assets/img/score-screen/textBox_2.png"></div>
+          <div class="score-box3"><img src="assets/img/score-screen/textBox_3.png"></div>
+          <div class="score-text">
+            <p>Your score:</p>
+          </div>
+          <div class="score-box"><img src="assets/img/score-screen/score-box.png">
+            <div class="score-value">
+              <p id="scoreValueTag">0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="score-buttons">
+        <button id="retryBtn">Retry</button>
+        <button id="nextBtn">next</button>
+      </div>
+    </div>
     <div class="buttons">
       <button id="prev">Prev</button>
       <button id="next">Next</button>
     </div>
-    <script src="assets/js/foundation.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.min.js?rel=96859"></script>
   </body>
 </html>
